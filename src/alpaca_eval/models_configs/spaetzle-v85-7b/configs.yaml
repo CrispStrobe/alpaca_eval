@@ -1,0 +1,13 @@
+spaetzle-v85-7b:
+  prompt_template: "Yi-34B-Chat/prompt.txt" # chatml with <|im_end|>
+  fn_completions: "huggingface_local_completions"
+  completions_kwargs:
+    model_name: "cstr/spaetzle-v85-7b"
+    model_kwargs:
+      torch_dtype: 'bfloat16'
+    max_new_tokens: 2048
+    temperature: 0.7
+    top_p: 1.0
+    do_sample: True
+  pretty_name: "Spaetzle v85 7B"
+  link: "cstr/spaetzle-v85-7b"
